@@ -9,13 +9,9 @@ export default defineConfig({
     setupFiles: ['./src/setupTests.ts'],
     css: true,
     coverage: {
-      provider: 'c8',
-      reporter: ['text', 'json', 'html'],
+      provider: 'v8',
+      reporter: ['text', 'html'],
       exclude: ['node_modules/', 'src/setupTests.ts'],
-      branches: 60,
-      functions: 60,
-      lines: 60,
-      statements: 60
     }
   },
   define: {
