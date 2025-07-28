@@ -6,9 +6,6 @@ A React application that retrieves a list of Pokemon from the PokeAPI and displa
 
 - View a list of Pokemon with search functionality
 - Click on a Pokemon to view detailed information
-- Add/remove Pokemon to/from favorites
-- Persistent storage of favorites using localStorage
-- Responsive design for mobile and desktop
 
 ## Tech Stack
 
@@ -89,7 +86,6 @@ The coverage report will be generated in the `coverage` directory. The applicati
 ```
 src/
 ├── components/         # React components
-├── features/           # Redux slices and feature-specific code
 ├── services/           # API services using RTK Query
 ├── store/              # Redux store configuration
 ├── types/              # TypeScript type definitions

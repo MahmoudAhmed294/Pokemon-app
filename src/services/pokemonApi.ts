@@ -10,11 +10,9 @@ export const pokemonApi = createApi({
   endpoints: (builder) => ({
     getPokemonList: builder.query<PokemonListResponse, void>({
       query: () => "/pokemon",
-      providesTags: ["Pokemon"],
     }),
     getPokemonDetail: builder.query<PokemonDetail, string>({
       query: (id) => `/pokemon/${id}`,
-      providesTags: (result, error, id) => [{ type: "Pokemon", id }],
     }),
   }),
 });
