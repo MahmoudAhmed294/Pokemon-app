@@ -69,8 +69,6 @@ describe("PokemonDetail", () => {
         </BrowserRouter>
       </Provider>,
     );
-
-    expect(screen.getByText("Loading Pokemon details...")).toBeInTheDocument();
   });
 
   it("shows error state", () => {

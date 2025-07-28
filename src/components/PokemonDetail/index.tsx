@@ -13,7 +13,7 @@ const PokemonDetail = () => {
     skip: !id,
   });
 
-  if (isLoading) return <div className='loading'>Loading Pokemon details...</div>;
+  if (isLoading) return <div className='loading'>Loading Pokemon...</div>;
   if (error) return <div className='error'>Error loading Pokemon details!</div>;
   if (!data) return <div className='no-data'>No Pokemon found!</div>;
 
